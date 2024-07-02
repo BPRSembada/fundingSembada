@@ -2,9 +2,9 @@ import React from "react";
 import "../css/home_page.css";
 import { Table, InputGroup, Form, Button } from "react-bootstrap";
 import KalkulatorDeposito from "../component/calkulator";
-import Testimoni from "../component/testimoni";
 import { MdOutlineAccountCircle, MdOutlineDateRange } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
+import TestimonSwipe from "../component/testimoniSwipe";
 
 const HomePage = () => {
   return (
@@ -26,12 +26,13 @@ const HomePage = () => {
                   className="img_promo"
                 />
                 <div className="des_cartPromo">
-                  <h3>Lorem ipsum dolor</h3>
+                  <h3>SUKU BUNGA SUPER</h3>
+                  <h4>DEPOSITO BUNDLING</h4>
                   <ul>
-                    <li>Lorem ipsum dolor sit, amet consectetur</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur</li>
+                    <li>Penempatan Dana Minimal 100jt</li>
+                    <li>60% Dana Untuk Deposito Dengan Bunga 6,75%</li>
+                    <li>40% Dana Untuk Tabungan Dengan Bunga 4%</li>
+                    <li>Periode Program s.d Agustus 2024</li>
                   </ul>
                 </div>
               </div>
@@ -42,12 +43,13 @@ const HomePage = () => {
                   className="img_promo"
                 />
                 <div className="des_cartPromo">
-                  <h3>Lorem ipsum dolor</h3>
+                  <h3>BUNGA SUPER</h3>
                   <ul>
-                    <li>Lorem ipsum dolor sit, amet consectetur</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur</li>
+                    <li>Nominal Penempatan 500jt</li>
+                    <li>Jangka Waktu Penempatan 6 Bulan</li>
+                    <li>Suku Bunga 6,5% p.a.</li>
+                    <li>Nasabah New To Bank</li>
+                    <li>Masa Berlaku Program s.d 31 Agustus 2024</li>
                   </ul>
                 </div>
               </div>
@@ -59,29 +61,26 @@ const HomePage = () => {
               <Table striped bordered hover size="sm">
                 <thead>
                   <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
+                    <th>Jangka Waktu</th>
+                    <th>Suku BUnga Deposito</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>1 Bulan</td>
+                    <td>5,00% p.a.</td>
                   </tr>
                   <tr>
-                    <td>2</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td>3 Bulan</td>
+                    <td> 5,25% p.a.</td>
                   </tr>
                   <tr>
-                    <td>3</td>
-                    <td colSpan={2}>Larry the Bird</td>
-                    <td>@twitter</td>
+                    <td>6 Bulan</td>
+                    <td>5,50% p.a.</td>
+                  </tr>
+                  <tr>
+                    <td>12 Bulan</td>
+                    <td> 5,75% p.a.</td>
                   </tr>
                 </tbody>
               </Table>
@@ -168,7 +167,7 @@ const HomePage = () => {
             </ul>
           </div>
         </div>
-        <Testimoni />
+        <TestimonSwipe />
       </div>
     </div>
   );

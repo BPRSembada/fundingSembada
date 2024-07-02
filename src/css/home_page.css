@@ -44,7 +44,7 @@
 }
 .cartPromo {
   background-color: #fff;
-  padding: 0.5rem;
+  padding: 1.5rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -59,11 +59,14 @@
 }
 .right_hero {
   flex-basis: 30%;
-}
-.right_hero {
+  margin: 2rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  background-color: rgba(255, 255, 255, 0.714);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .form_label {
   font-weight: 500;
