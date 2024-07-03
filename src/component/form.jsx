@@ -14,17 +14,27 @@ const Form_funding = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await Axios.post(
+      const response = await fetch(
         "https://script.google.com/macros/s/AKfycbw1qh9VP79Q5jxFXPCHg2q_Mo7ItbzM76tXjW1T6kFfVAJilhoLpO070YFJjzZYZP4/exec?action=insert",
-        data
+        {
+          redirect: "follow",
+          method: "POST",
+          body: JSON.stringify(data),
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8",
+          },
+        }
       );
-      console.log(response.data);
-      alert(response.data.message);
+
+      const result = await response.json();
+      console.log(result);
+      alert(result.message);
     } catch (error) {
       console.error(error);
       alert("There was an error submitting the form");
     }
   };
+
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <h2>Form pengajuan Deposito</h2>
