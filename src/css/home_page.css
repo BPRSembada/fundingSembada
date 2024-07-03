@@ -16,12 +16,7 @@
   width: 85%;
   justify-content: space-evenly;
   gap: 5rem;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
   padding: 20px;
-  backdrop-filter: blur(1px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   color: var(--merah);
 }
 .left_hero {
@@ -64,9 +59,10 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* background-color: rgba(255, 255, 255, 0.714);
+  background-color: rgba(255, 255, 255, 0.714);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.3); */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
 }
 .form_label {
   font-weight: 500;
