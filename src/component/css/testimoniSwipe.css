@@ -41,7 +41,8 @@
   border-radius: 10px;
   background-color: #fff;
   margin: 0 10px;
-  width: 35rem;
+  width: 36rem;
+  height: auto;
 }
 
 .testimonial .testimonial-img {
@@ -59,6 +60,6 @@
 }
 
 .testimonial p {
-  font-size: 1em;
+  font-size: 0.9em;
   color: #666;
 }

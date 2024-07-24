@@ -59,7 +59,7 @@ const Form_funding = () => {
               placeholder="Nama"
               aria-label="Nama"
               aria-describedby="basic-addon1"
-              {...register("nama", { required: "Isi nama anda" })}
+              {...register("nama", { required: "Isi nama Anda Sesuai KTP" })}
             />
           </InputGroup>
           <Form.Text className="mb-3">
@@ -77,7 +77,7 @@ const Form_funding = () => {
               placeholder="08xxxxxxxxxx"
               aria-label="No HP"
               aria-describedby="basic-addon1"
-              {...register("no_hp", { required: "Isi nomor handphone anda" })}
+              {...register("no_hp", { required: "Isi nomor handphone Anda" })}
             />
           </InputGroup>
           <Form.Text className="mb-3">
@@ -90,11 +90,11 @@ const Form_funding = () => {
             <InputGroup.Text id="basic-addon1">Rp</InputGroup.Text>
             <Form.Control
               type="number"
-              placeholder="10.000.000"
+              placeholder="ex:10.000.000"
               aria-label="Nominal"
               aria-describedby="basic-addon1"
               {...register("nominal", {
-                required: "Isi jumlah penempatan yang akan dilakukan",
+                required: "Isi jumlah penempatan dana",
               })}
             />
           </InputGroup>
@@ -113,7 +113,9 @@ const Form_funding = () => {
               placeholder="Jangka Waktu"
               aria-label="Jangka Waktu"
               aria-describedby="basic-addon1"
-              {...register("tenor", { required: "Isi jangka waktu" })}
+              {...register("tenor", {
+                required: "Isi jangka waktu penempatan",
+              })}
             />
           </InputGroup>
           <Form.Text className="mb-3">
@@ -121,29 +123,10 @@ const Form_funding = () => {
           </Form.Text>
         </div>
 
-        <div className="formDepo">
-          <Form.Label className="form_label">Suku Bunga</Form.Label>
-          <InputGroup>
-            <InputGroup.Text id="basic-addon1">%</InputGroup.Text>
-            <Form.Control
-              placeholder="Suku Bunga"
-              aria-label="Suku Bunga"
-              aria-describedby="basic-addon1"
-              {...register("bunga", {
-                required: "Isi suku bunga yg anda inginkan",
-              })}
-            />
-          </InputGroup>
-          <Form.Text className="mb-3">
-            {errors.bunga && <span>{errors.bunga.message}</span>}
-          </Form.Text>
-        </div>
-
         <div>
           <Button variant="danger" className="me-4" type="submit">
             Ajukan Sekarang
           </Button>
-          <Button variant="danger">Kalkulator Deposito</Button>
         </div>
       </form>
 

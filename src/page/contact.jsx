@@ -19,7 +19,9 @@ const Contact = () => {
           </div>
           <div>
             <h3>Whatsapp Center</h3>
-            <img src="/assets/wa_center.png" alt="Whatsapp_center" />
+            <a href="https://wa.me/6288801362000" target="blank">
+              <img src="/assets/wa_center.png" alt="Whatsapp_center" />
+            </a>
           </div>
           <div>
             <h3>Jam Buka</h3>

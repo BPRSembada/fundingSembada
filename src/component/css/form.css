@@ -1,9 +1,11 @@
-.formDepo{
-    display: flex;
-    flex-direction: column;
+.formDepo {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+  /* width: 30rem; */
 }
 
-.formDepo span{
-    font-weight: bold;
-    color: rgb(199, 8, 8);
+.formDepo span {
+  font-weight: bold;
+  color: rgb(199, 8, 8);
 }

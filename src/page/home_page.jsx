@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="hero_home">
-        <img src="assets/lending/hero_lending1.jpg" alt="" />
+        {/* <img src="assets/lending/hero_lending1.jpg" alt="" /> */}
         <div className="caption_hero">
           <div className="left_hero">
             <img
@@ -27,9 +27,14 @@ const HomePage = () => {
                   <h3>PROMO KEMERDEKAAN</h3>
                   <ul>
                     <li>Penempatan Dana Minimal 100jt</li>
-                    <li>60% Dana Untuk Deposito Dengan Bunga 6,75%</li>
-                    <li>40% Dana Untuk Tabungan Dengan Bunga 4%</li>
-                    <li>Periode Program s.d Agustus 2024</li>
+                    <li>
+                      60% Dana Untuk Deposito Dengan Bunga <span>6,75%</span>{" "}
+                      p.a
+                    </li>
+                    <li>
+                      40% Dana Untuk Tabungan Dengan Bunga <span>4%</span> p.a
+                    </li>
+                    <li>Periode Program s.d 31 Agustus 2024</li>
                   </ul>
                 </div>
               </div>
@@ -44,7 +49,9 @@ const HomePage = () => {
                   <ul>
                     <li>Nominal Penempatan 500jt</li>
                     <li>Jangka Waktu Penempatan 6 Bulan</li>
-                    <li>Suku Bunga 6,5% p.a.</li>
+                    <li>
+                      Suku Bunga <span>6,5%</span> p.a.
+                    </li>
                     <li>Nasabah New To Bank</li>
                     <li>Masa Berlaku Program s.d 31 Agustus 2024</li>
                   </ul>
@@ -100,10 +107,17 @@ const HomePage = () => {
                 Dikelola Manajemen dan Staf profesional bersertifikasi
                 perbankan.
               </li>
-              <li>Dijamin Lembaga Penjamin Simpanan</li>
-              <li>Proses Cepat dengan bilyet 1 hari jadi.</li>
+              <li>Dijamin Lembaga Penjamin Simpanan*</li>
+              <li>Proses Cepat dengan bilyet 1 hari jadi**</li>
               <li>Layanan servis jemput dokumen</li>
             </ul>
+            <i className="mt-1" style={{ color: "red", fontSize: "1.1rem" }}>
+              *LPS menjamin simpanan sampai 2 Miliyar per Nasabah Bank
+            </i>{" "}
+            <br />
+            <i style={{ color: "red", fontSize: "1.1rem" }}>
+              **Dengan syarat kelengkapan verivikasi dokumen
+            </i>
           </div>
         </div>
         <div className="cont-testimonial">

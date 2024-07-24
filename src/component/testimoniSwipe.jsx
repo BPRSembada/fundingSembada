@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 import "./css/testimoniSwipe.css";
 
@@ -18,13 +17,39 @@ export default function TestimonSwipe() {
   return (
     <>
       <Swiper
-        onSwiper={setSwiperRef}
         slidesPerView={3}
-        centeredSlides={true}
         spaceBetween={30}
-        navigation={true}
-        modules={[Pagination, Navigation]}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
         className="mySwiper"
+        breakpoints={{
+          360: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          922: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1400: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
       >
         <SwiperSlide>
           <div className="testimonial">
